@@ -1,12 +1,13 @@
 import { create } from 'zustand';
+import Trips from '../../../types/trips';
 
-interface BearState {
-  trip: [{}];
+interface TripsState {
+  trip: Trips[];
 
 
 }
-export const useTripsStore = create<BearState>((set) => ({
-  trip: [
+export const useTripsStore = create<TripsState>((set) => ({
+  trip:  [
     {
       tripID: "trip1",
       tripName: "Andalusia Euro trip",
