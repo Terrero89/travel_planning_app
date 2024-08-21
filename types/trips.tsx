@@ -12,7 +12,7 @@ export type Expenses = {
     isCompleted: Boolean
 }
 
-export interface Places {
+export type Places = {
     cityID: string;
     city: string;
     from: Date | string;
@@ -22,7 +22,7 @@ export interface Places {
     expenses: Expenses[];
 }
 
-export default interface Trips {
+export type Trips =  {
     tripID: string;
     tripName: string;
     transportType: TransportType;
