@@ -1,23 +1,23 @@
-import { create } from 'zustand'
+import { create } from 'zustand';
+import Trips from '../../../types/trips';
 
-interface BearState {
-  trip: [{}];
-
-
+interface TripsState {
+  trip: Trips[];
 }
-export const useTripsStore = create<BearState>((set) => ({
-  trip: [
+export const useTripsStore = create<TripsState>((set) => ({
+  trip:  [
     {
-      tripID: "trip1",
-      tripName: "Andalusia Euro trip",
+      destinationID: "trip1",
+      destination: "Andalusia Euro trip",
       transportType: "Flight",
       from: "11-07-2024",
-      to: "19-07-2024",
-      totalCost: 1000, // based on the total cost of the trip
+      to: "19-07-expenses: Array<Expenses>;2024",
+      destinationBudget: 1000, // based on the total cost of the trip
       arriving: "11-08-2024",
       leaving: "11-19-2024",
       tripDuration: 12,
       dateAdded: "08-07-2024",
+      isTripCompleted: false,
       places: [
         {
           cityID: "city1",
@@ -27,13 +27,13 @@ export const useTripsStore = create<BearState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           expenses: [
-            { expenseID: "ex1", category: "Attractions", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex2", category: "Food", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex3", category: "Landmarks", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex4", category: "Flight", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex5", category: "Purchase", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex4", category: "Accommodation", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex4", category: "Transportation", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false }
+            { expenseID: "ex1", category: "Attractions", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+            { expenseID: "ex2", category: "Food",expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+            { expenseID: "ex3", category: "Landmarks", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+            { expenseID: "ex4", category: "Flight", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '',isCompleted: false },
+            { expenseID: "ex5", category: "Purchase", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '',isCompleted: false },
+            { expenseID: "ex4", category: "Accommodation", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '',isCompleted: false },
+            { expenseID: "ex4", category: "Transportation", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "",location: '', isCompleted: false }
 
           ]
 
@@ -46,13 +46,13 @@ export const useTripsStore = create<BearState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           expenses: [
-            { expenseID: "ex1", category: "Attractions", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex2", category: "Food", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex3", category: "Landmarks", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex4", category: "Flight", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex5", category: "Purchase", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex4", category: "Accommodation", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex4", category: "Transportation", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false }
+            { expenseID: "ex1", category: "Attractions", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+            { expenseID: "ex2", category: "Food",expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+            { expenseID: "ex3", category: "Landmarks", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+            { expenseID: "ex4", category: "Flight", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '',isCompleted: false },
+            { expenseID: "ex5", category: "Purchase", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '',isCompleted: false },
+            { expenseID: "ex4", category: "Accommodation", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '',isCompleted: false },
+            { expenseID: "ex4", category: "Transportation", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "",location: '', isCompleted: false }
 
           ]
 
@@ -65,10 +65,10 @@ export const useTripsStore = create<BearState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           expenses: [
-            { expenseID: "ex1", category: "Attractions", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex2", category: "Food", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex3", category: "Landmarks", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-
+            { expenseID: "ex1", category: "Attractions", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+            { expenseID: "ex2", category: "Food",expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+            { expenseID: "ex3", category: "Landmarks", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+         
           ]
 
         },
@@ -80,10 +80,10 @@ export const useTripsStore = create<BearState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           expenses: [
-            { expenseID: "ex1", category: "Attractions", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex2", category: "Food", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex3", category: "Landmarks", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-
+            { expenseID: "ex1", category: "Attractions", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+            { expenseID: "ex2", category: "Food",expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+            { expenseID: "ex3", category: "Landmarks", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+         
           ]
 
         },
@@ -95,10 +95,10 @@ export const useTripsStore = create<BearState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           expenses: [
-            { expenseID: "ex1", category: "Attractions", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex2", category: "Food", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex3", category: "Landmarks", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-
+            { expenseID: "ex1", category: "Attractions", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+            { expenseID: "ex2", category: "Food",expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+            { expenseID: "ex3", category: "Landmarks", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+         
           ]
 
         },
@@ -110,10 +110,10 @@ export const useTripsStore = create<BearState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           expenses: [
-            { expenseID: "ex1", category: "Attractions", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex2", category: "Food", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex3", category: "Landmarks", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-
+            { expenseID: "ex1", category: "Attractions", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+            { expenseID: "ex2", category: "Food",expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+            { expenseID: "ex3", category: "Landmarks", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+         
           ]
 
         },
@@ -126,10 +126,10 @@ export const useTripsStore = create<BearState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           expenses: [
-            { expenseID: "ex1", category: "Attractions", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex2", category: "Food", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex3", category: "Landmarks", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-
+            { expenseID: "ex1", category: "Attractions", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+            { expenseID: "ex2", category: "Food",expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+            { expenseID: "ex3", category: "Landmarks", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+         
           ]
 
         },
@@ -141,10 +141,10 @@ export const useTripsStore = create<BearState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           expenses: [
-            { expenseID: "ex1", category: "Attractions", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex2", category: "Food", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex3", category: "Landmarks", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-
+            { expenseID: "ex1", category: "Attractions", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+            { expenseID: "ex2", category: "Food",expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+            { expenseID: "ex3", category: "Landmarks", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+         
           ]
 
         },
@@ -153,16 +153,17 @@ export const useTripsStore = create<BearState>((set) => ({
     },
 
     {
-      tripID: "trip2",
-      tripName: "Canada 2024",
-      transportType: "Drive",
+      destinationID: "trip2",
+      destination: "",
+      transportType: "Flight",
       from: "11-07-2024",
-      to: "19-07-2024",
-      totalCost: 1000, // based on the total cost of the trip
+      to: "19-07-expenses: Array<Expenses>;2024",
+      destinationBudget: 1000, // based on the total cost of the trip
       arriving: "11-08-2024",
       leaving: "11-19-2024",
       tripDuration: 12,
       dateAdded: "08-07-2024",
+      isTripCompleted: false,
       places: [
         {
           cityID: "city1",
@@ -172,14 +173,10 @@ export const useTripsStore = create<BearState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           expenses: [
-            { expenseID: "ex1", category: "Attractions", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex2", category: "Food", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex3", category: "Landmarks", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex4", category: "Flight", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex5", category: "Purchase", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex4", category: "Accommodation", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex4", category: "Transportation", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false }
-
+            { expenseID: "ex1", category: "Attractions", expense: "Malaga Cathedral2", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+            { expenseID: "ex2", category: "Food",expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+            { expenseID: "ex3", category: "Landmarks", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+          
           ]
 
         },
@@ -191,14 +188,10 @@ export const useTripsStore = create<BearState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           expenses: [
-            { expenseID: "ex1", category: "Attractions", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex2", category: "Food", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex3", category: "Landmarks", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex4", category: "Flight", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex5", category: "Purchase", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex4", category: "Accommodation", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false },
-            { expenseID: "ex4", category: "Transportation", expenseName: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", isCompleted: false }
-
+            { expenseID: "ex1", category: "Attractions", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+            { expenseID: "ex2", category: "Food",expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+            { expenseID: "ex3", category: "Landmarks", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", duration: 2, comments: "", location: '', isCompleted: false },
+          
           ]
 
         },
