@@ -14,6 +14,7 @@ export type Trips =  {
     places: Places[];
 }
 export type Expenses = {
+    expense: string;
     expenseID: string;
     category: string;
     expenseName: string;
@@ -28,6 +29,8 @@ export type Expenses = {
 }
 
 export type Places = {
+    cost: ReactNode;
+    category: string;
     cityID: string;
     city: string;
     from: Date | string;
