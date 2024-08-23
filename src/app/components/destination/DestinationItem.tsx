@@ -1,24 +1,25 @@
 
 "use client"
 
+// import { useTripsStore } from '@/app/stores/useStore';
 import Trips from '../../types/trips';
-import { useTripsStore } from '../../storess/useTripsStore'
 
-interface Props {
-    destinationList: string;
+interface DestionationProps{
+    destinationList: Trips[]
 }
 
-const Header: React.FC<Props> = ({ destinationList }: Trips) => {
+
+const DestinationItem: React.FC<DestionationProps> = ({destinationList}) => {
     // getting the destination by id from store
-    const trip = useTripsStore((state: { trip: Trips[]; }) => state.trip);
+    // const destination = useTripsStore((state: { trip: Trips[]; }) => state.trip);
     return (
-        <div className="border-2 border-white border-opacity-25 content-center my-2 p-2">
-            <div>TRIPS: {trip.map((trip: Trips) => trip.destination)}</div>
+        <div className=" content-center my-2 p-2">
+            <div className=" content-center mx-1">DESTINATIONS: {destinationList.map((trip: Trips) => <h3>{trip.destination}</h3>)} </div>
         </div>
 
 
     );
 }
 
-export default Header;
+export default DestinationItem;
 

@@ -143,7 +143,7 @@ export const useTripsStore = create<TripsState>((set) => ({
 
     {
       destinationID: "trip2",
-      destination: "",
+      destination: "Canada",
       transportType: "Flight",
       from: "11-07-2024",
       to: "19-07-2024",
