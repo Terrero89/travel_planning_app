@@ -7,8 +7,6 @@ export type Trips =  {
     from: Date | string;
     to: Date | string;
     destinationBudget:number; // based on the total cost of the trip
-    arriving:Date | string;
-    leaving: Date | string;
     tripDuration: 12,
     dateAdded: Date | string;
     isTripCompleted: boolean;

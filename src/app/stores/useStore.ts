@@ -13,8 +13,6 @@ export const useTripsStore = create<TripsState>((set) => ({
       from: "11-07-2024",
       to: "19-07-2024",
       destinationBudget: 1000, // based on the total cost of the trip
-      arriving: "11-08-2024",
-      leaving: "11-19-2024",
       tripDuration: 12,
       dateAdded: "08-07-2024",
       isTripCompleted: false,
