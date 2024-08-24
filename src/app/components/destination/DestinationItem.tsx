@@ -17,7 +17,8 @@ const DestinationItem: React.FC<DestionationProps> = ({ destinationList }) => {
             <h3>DESTINATION LIST</h3>
 
             <ul className=' '>
-                {destinationList.map((trip) => (<li className='bg-gray-900  max-w-auto mx-auto  rounded-md border-opacity-5 m-2 py-2 px-1' key={trip.id}>
+  
+                {destinationList.map((trip) => (<li className=' shadow-sm  cardBg max-w-auto mx-auto  rounded-sm border-opacity-5 m-2 py-2 px-1' key={trip.id}>
                     <h3 className=' text-base mx-3 my-1 font-semibold'>{trip.destination}</h3>
                     <div className='flex flex-row '>
                         <div className=' mx-2 px-1  auto-w h-auto '>
@@ -35,7 +36,7 @@ const DestinationItem: React.FC<DestionationProps> = ({ destinationList }) => {
                             <p className='text-xs text-gray-300'><span className='text-xs text-white'>Trip Status: </span>{trip.isTripCompleted ? "completed" : "Not completed"}</p>
                         </div>
 
-                        <div className='mx-2 px-1 text-xs'>
+                        <div className=' text-xs'>
                             <p className='text-xs text-gray-300'> <span className='text-xs text-white'>Rating </span> {trip.tripRating} </p>
                             <button className='my-1'>See Cities</button></div>
                     </div>

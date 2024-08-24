@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main className="">
       <div className="mx-auto z-10 w-full max-w-3xl items-center justify-between font-mono text-sm ">
-        <UIHeader title="TRAVEL PLANNING APP"/>
+        <UIHeader title="Travel Planning App"/>
         <DestinationList  />
         CITY LIST: 
         <CityList/>
