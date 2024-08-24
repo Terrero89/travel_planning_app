@@ -29,8 +29,6 @@ export type Expenses = {
 }
 
 export type Places = {
-    cost: ReactNode;
-    category: string;
     cityID: string;
     city: string;
     from: Date | string;

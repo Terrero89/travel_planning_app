@@ -19,7 +19,6 @@ export default function Home() {
     <main className="">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm ">
         <UIHeader title="TRAVEL PLANNING APP"/>
-        DESTINATIONS:
         <DestinationList  />
         CITY LIST: 
         <CityList/>
