@@ -3,6 +3,7 @@
 
 
 import { Places, Trips } from '../../types/trips';
+import { calculateDaysRemaining, calculateTimeDifference} from '../../utils/date-convertion';
 import CityItem from './components/cities/CityItem';
 import CityList from './components/cities/CityList';
 import DestinationItem from './components/destination/DestinationItem';
@@ -18,6 +19,7 @@ import { useState } from 'react';
 export default function Home() {
 
   const trip = useTripsStore((state: { trip: Trips[]; }) => state.trip);
+
 
 
   return (
@@ -37,6 +39,7 @@ export default function Home() {
 
       </div>
     </main>
+
   );
 }
 
