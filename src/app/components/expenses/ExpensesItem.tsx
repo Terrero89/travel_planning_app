@@ -17,8 +17,8 @@ const CityItem: React.FC<ExpensesProps> = ({ expensesList }) => {
 
         <div>
             <ul className=' '>
-                {expensesList.map((trip) => (<li className='max-w-auto mx-auto ` border-2 rounded-md border-opacity-5 m-2 py-2 px-1' key={trip.id}>
-                    <h3 className='text-base mx-3 my-1 font-semibold'>{trip.expense}</h3>
+                {expensesList.map((trip) => (<li className=' bg-gray-900 max-w-auto mx-auto `  rounded-md border-opacity-0 m-2 py-2 px-1' key={trip.id}>
+                    <h3 className=' text-base mx-3 my-1 font-semibold'>{trip.expense}</h3>
                     <div className='flex flex-row '>
                         <div className=' mx-2 px-1  auto-w h-auto '>
                             <h4 className='font-medium text-xs text-gray-300'><span className='text-xs text-white'>Category: </span>  {trip.category}</h4>

@@ -19,7 +19,7 @@ const CityItem: React.FC<CityProps> = ({ cityList }) => {
 
         <div>
             <ul className=' '>
-                {cityList.map((city) => (<li className=' bg-gray-900 max-w-auto mx-auto ` border-2 rounded-md border-opacity-5 m-2 py-2 px-1' key={city.cityID}>
+                {cityList.map((city) => (<li className=' bg-gray-900 max-w-auto mx-auto  rounded-md border-opacity-5 m-2 py-2 px-1' key={city.cityID}>
                     <h3 className='text-base mx-3 my-1 font-semibold'>{city.city}</h3>
                     <div className='flex flex-row space-x-12  '>
                         <div className=' mx-2 px-1  auto-w h-auto '>

@@ -17,8 +17,8 @@ const DestinationItem: React.FC<DestionationProps> = ({ destinationList }) => {
             <h3>DESTINATION LIST</h3>
 
             <ul className=' '>
-                {destinationList.map((trip) => (<li className='max-w-auto mx-auto ` border-2 rounded-md border-opacity-5 m-2 py-2 px-1' key={trip.id}>
-                    <h3 className='text-base mx-3 my-1 font-semibold'>{trip.destination}</h3>
+                {destinationList.map((trip) => (<li className='bg-gray-900  max-w-auto mx-auto  rounded-md border-opacity-5 m-2 py-2 px-1' key={trip.id}>
+                    <h3 className=' text-base mx-3 my-1 font-semibold'>{trip.destination}</h3>
                     <div className='flex flex-row '>
                         <div className=' mx-2 px-1  auto-w h-auto '>
                             <p className='font-medium text-xs text-gray-300'><span className='text-xs text-white'>From: </span>  {trip.from}</p>
