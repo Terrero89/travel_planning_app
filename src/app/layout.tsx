@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Nav/Header";
+import { NextUIProvider } from "@nextui-org/react";
 
 
 
@@ -20,10 +21,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
-        <div className=" w-auto mx-auto border-blue-100 border-opacity-25 text-white h-auto p-5 my-8 container   ">
-          {children}
-        </div>
+
+        <NextUIProvider>
+
+          <Header />
+          <div className="border-2 w-auto mx-auto border-blue-100 border-opacity-25 text-white h-auto p-5 rounded-md my-8 container   ">
+            {children}
+          </div>
+
+        </NextUIProvider>
       </body>
     </html>
   );

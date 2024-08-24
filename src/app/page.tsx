@@ -1,6 +1,7 @@
 
 "use client"
 
+
 import { Places, Trips } from '../../types/trips';
 import { calculateDaysRemaining, calculateTimeDifference} from '../../utils/date-convertion';
 import CityItem from './components/cities/CityItem';
@@ -10,6 +11,8 @@ import DestinationList from './components/destination/DestinationList';
 import ExpensesList from './components/expenses/ExpensesList';
 import UIHeader from './components/UI/UIHeader';
 import { useTripsStore } from './stores/useStore';
+import { useState } from 'react';
+
 
 
 
@@ -19,23 +22,24 @@ export default function Home() {
 
 
 
-  
   return (
+    <main className="">
+      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm ">
+        <UIHeader title="TRAVEL PLANNING APP" />
+        <div className="flex gap-x-4">
+ 
+  
+        </div>
+        DESTINATIONS:
+        <DestinationList />
+        CITY LIST:
+        <CityList />
+        EXPENSES
+        <ExpensesList />
 
+      </div>
+    </main>
 
-
-  <main className="">
-    <div className="mx-auto z-10 w-full max-w-3xl items-center justify-between font-mono text-sm ">
-      <UIHeader title="Travel Planning App" />
-      {calculateDaysRemaining("2025-02-28")} days remaining----- {calculateTimeDifference("10:55 AM", "10:55 PM")}
-      <DestinationList />
-      CITY LIST:
-      <CityList />
-      EXPENSES
-      <ExpensesList />
-
-    </div>
-  </main>
   );
 }
 
