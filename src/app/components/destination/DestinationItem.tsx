@@ -20,24 +20,34 @@ const DestinationItem: React.FC<DestionationProps> = ({ destinationList }) => {
             <h3>DESTINATION LIST</h3>
 
             <ul className=' '>
-                {destinationList.map((trip) => (<li className=' flex border rounded-md border-opacity-25 m-2 py-2 px-1' key={trip.id}>
-                    <div className='mx-2 px-1  auto-w h-auto'>
-                        <p>DESTINATION: {trip.destination}</p>
-                        <div className='flex'>  <p>FROM: {trip.from}</p>
-                            <p>TO: {trip.to}</p></div>
-                            <p>Duration {trip.tripDuration} days</p>
+                {destinationList.map((trip) => (<li className='max-w-[800px] mx-auto ` border-2 rounded-md border-opacity-5 m-2 py-2 px-1' key={trip.id}>
+                    <h3 className='text-base mx-3 my-1 font-semibold'>{trip.destination}</h3>
+                    <div className='flex flex-row '>
+                        <div className=' mx-2 px-1  auto-w h-auto '>
+                            <p className='font-medium text-xs text-gray-300'><span className='text-xs text-white'>From: </span>  {trip.from}</p>
+                            <p className='text-xs text-gray-300'><span className='text-xs text-white'>To:</span> {trip.to}</p>
+                            <div className='text-gray-50 '>
+
+                            </div>
+                            <h5 className='text-xs text-gray-300'><span className='text-xs text-white'>Duration: </span>  <span className='font-semibold'>{trip.tripDuration} </span> days</h5>
+
+                        </div>
+
+                        <div className='mx-2 px-1 '>
+                            <p className='text-xs text-gray-300'><span className='text-xs text-white'>Transportation: </span>{trip.transportType}</p>
+                            <p className='text-xs text-gray-300'><span className='text-xs text-white'>Trip Status: </span>{trip.isTripCompleted ? "completed" : "Not completed"}</p>
+
+
+                        </div>
+
+                        <div className='mx-2 px-1 text-xs'>
+                            <p className='text-xs text-gray-300'> <span className='text-xs text-white'>Rating </span> {trip.tripRating} </p>
+                            <button className='my-1'>See Cities</button></div>
 
                     </div>
 
-                    <div className='mx-2 px-1 '>
-                        <p>Type of Transportation: {trip.transportType}</p>
-                        <p>trip status: {trip.isTripCompleted ? "completed" : "not completed"}</p>
-                        <p>Trip Rating {trip.tripRating} </p>
-                        <button>See Cities</button>
 
-                    </div>
 
-                  
 
 
                 </li>))}
