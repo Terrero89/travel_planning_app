@@ -13,9 +13,7 @@ interface CityProps {
 const CityItem: React.FC<CityProps> = ({ cityList }) => {
 
     return (
-        // <div className=" content-center my-2 p-2 mx-">
-        //     <div className=" content-center"> {cityList.map((place: Places) => (<h3>{place.city}</h3> ))} </div>
-        // </div>
+
 
         <div>
             <ul className=' '>
@@ -24,7 +22,7 @@ const CityItem: React.FC<CityProps> = ({ cityList }) => {
                     <div className='flex flex-row space-x-12  '>
                         <div className=' mx-2 px-1  auto-w h-auto '>
                             <h4 className='font-medium text-xs text-gray-300'><span className='text-xs text-white'>From:</span>  {city.from}</h4>
-                            <p className='font-medium text-xs text-gray-300'><span className='text-xs text-white'>To:</span> city.to}</p>
+                            <p className='font-medium text-xs text-gray-300'><span className='text-xs text-white'>To:</span> {city.to}</p>
                             <div className='text-gray-50 '>
 
                             </div>
