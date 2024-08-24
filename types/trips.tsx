@@ -22,6 +22,7 @@ export type Expenses = {
     date: Date | string;
     startTime: Date | string;
     endTime: Date | string;
+    location: string;
     duration: number;
     comments: string;
     isCompleted: Boolean
@@ -29,8 +30,6 @@ export type Expenses = {
 }
 
 export type Places = {
-    cost: ReactNode;
-    category: string;
     cityID: string;
     city: string;
     from: Date | string;
@@ -38,6 +37,7 @@ export type Places = {
     totalCost: number;
     isThisCityVisited: boolean;
     cityRating: number;
+    duration: number;
     expenses: Expenses[];
 }
 
