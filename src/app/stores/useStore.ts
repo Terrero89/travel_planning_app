@@ -26,6 +26,7 @@ export const useTripsStore = create<TripsState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           cityRating: 4.5,
+          duration: 3,
           expenses: [
             {
               expenseID: "ex1",
@@ -39,7 +40,7 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Historic fortress with stunning views of the city",
               location: 'Málaga, Spain',
               isCompleted: false,
-              placerating: 4.7
+              placeRating: 4.7
             },
             {
               expenseID: "ex2",
@@ -136,6 +137,7 @@ export const useTripsStore = create<TripsState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           cityRating: 4.5,
+          duration: 3,
           expenses: [
             {
               expenseID: "ex1",
@@ -246,6 +248,7 @@ export const useTripsStore = create<TripsState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           cityRating: 4.5,
+          duration: 2,
           expenses: [
             {
               expenseID: "ex1",
@@ -356,6 +359,7 @@ export const useTripsStore = create<TripsState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           cityRating: 4.5,
+          duration: 1,
           expenses: [
             {
               expenseID: "ex1",
@@ -467,6 +471,7 @@ export const useTripsStore = create<TripsState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           cityRating: 4.5,
+          duration: 0.5,
           expenses: [
             {
               expenseID: "ex1",
@@ -577,6 +582,7 @@ export const useTripsStore = create<TripsState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           cityRating: 4.5,
+          duration: 0.5,
           expenses: [
             {
               expenseID: "ex1",
@@ -688,6 +694,7 @@ export const useTripsStore = create<TripsState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           cityRating: 4.5,
+          duration: 0.5,
           expenses: [
             {
               expenseID: "ex1",
@@ -798,6 +805,7 @@ export const useTripsStore = create<TripsState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           cityRating: 4.5,
+          duration: 1,
           expenses: [
             {
               expenseID: "ex1",
@@ -909,6 +917,7 @@ export const useTripsStore = create<TripsState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           cityRating: 4.5,
+          duration: 1,
           expenses: [
             {
               expenseID: "ex1",

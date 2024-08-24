@@ -13,14 +13,11 @@ interface DestionationProps {
 const DestinationItem: React.FC<DestionationProps> = ({ destinationList }) => {
 
     return (
-        // <div className=" content-center my-2 p-2 ">
-        //     <div className=" content-center">{destinationList.map((trip: Trips) =>( <h3>{trip.destination}</h3>))} </div>
-        // </div>
         <div>
             <h3>DESTINATION LIST</h3>
 
             <ul className=' '>
-                {destinationList.map((trip) => (<li className='max-w-[800px] mx-auto ` border-2 rounded-md border-opacity-5 m-2 py-2 px-1' key={trip.id}>
+                {destinationList.map((trip) => (<li className='max-w-auto mx-auto ` border-2 rounded-md border-opacity-5 m-2 py-2 px-1' key={trip.id}>
                     <h3 className='text-base mx-3 my-1 font-semibold'>{trip.destination}</h3>
                     <div className='flex flex-row '>
                         <div className=' mx-2 px-1  auto-w h-auto '>
@@ -36,20 +33,12 @@ const DestinationItem: React.FC<DestionationProps> = ({ destinationList }) => {
                         <div className='mx-2 px-1 '>
                             <p className='text-xs text-gray-300'><span className='text-xs text-white'>Transportation: </span>{trip.transportType}</p>
                             <p className='text-xs text-gray-300'><span className='text-xs text-white'>Trip Status: </span>{trip.isTripCompleted ? "completed" : "Not completed"}</p>
-
-
                         </div>
 
                         <div className='mx-2 px-1 text-xs'>
                             <p className='text-xs text-gray-300'> <span className='text-xs text-white'>Rating </span> {trip.tripRating} </p>
                             <button className='my-1'>See Cities</button></div>
-
                     </div>
-
-
-
-
-
                 </li>))}
             </ul>
         </div>

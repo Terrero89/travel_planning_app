@@ -4,6 +4,7 @@
 import { useTripsStore } from '@/app/stores/useStore';
 import Trips from '../../types/trips';
 import DestinationItem from './DestinationItem';
+import Badge from '../UI/BadgeItem'
 
 
 
@@ -13,6 +14,7 @@ const Header: React.FC<{}> = ({ }) => {
 
   return (
     <div className="">
+      {/* <Badge content={4.7} color={'red'} children={'Rating'} /> */}
       <DestinationItem destinationList={destination} />
     </div>
 

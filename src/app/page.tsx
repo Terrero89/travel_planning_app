@@ -17,7 +17,7 @@ export default function Home() {
   const trip = useTripsStore((state: { trip: Trips[]; }) => state.trip);
   return (
     <main className="">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm ">
+      <div className="mx-auto z-10 w-full max-w-3xl items-center justify-between font-mono text-sm ">
         <UIHeader title="TRAVEL PLANNING APP"/>
         <DestinationList  />
         CITY LIST: 
