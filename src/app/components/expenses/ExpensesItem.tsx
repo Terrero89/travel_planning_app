@@ -34,7 +34,7 @@ const CityItem: React.FC<ExpensesProps> = ({ expensesList }) => {
 
                         <div className='mx-2 px-1 '>
                             <p className='text-xs text-gray-300'><span className='text-xs text-white'>Location: </span>{expense.location}</p>
-                            <p className='text-xs text-gray-300'><span className='text-xs text-white'>Status:  </span>{expense.isCompleted ? "completed" : "Not completed"}</p>
+                            <p className='text-xs text-gray-300'><span className='text-xs text-white'>Status:  </span>{expense.isCompleted ? "Visited" : "Not visited yet"}</p>
 
 
                         </div>

@@ -33,7 +33,7 @@ const DestinationItem: React.FC<DestionationProps> = ({ destinationList }) => {
 
                         <div className='mx-2 px-1 '>
                             <p className='text-xs text-gray-300'><span className='text-xs text-white'>Transportation: </span>{trip.transportType}</p>
-                            <p className='text-xs text-gray-300'><span className='text-xs text-white'>Trip Status: </span>{trip.isTripCompleted ? "completed" : "Not completed"}</p>
+                            <p className='text-xs text-gray-300'><span className='text-xs text-white'>Trip Status: </span>{trip.isTripCompleted ? "Visited" : "Not visited yet"}</p>
                         </div>
 
                         <div className=' text-xs'>
