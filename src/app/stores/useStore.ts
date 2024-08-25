@@ -4,6 +4,7 @@ import { calculateDaysRemaining, calculateDaysSpent } from '../../../utils/date-
 
 interface TripsState {
   trip: Trips[];
+  getPlacesByDestinationID: (id: string) => Trips["places"] | undefined;
 }
 export const useTripsStore = create<TripsState>((set) => ({
   trip: [
@@ -1234,6 +1235,10 @@ export const useTripsStore = create<TripsState>((set) => ({
       ]
     },
 
-  ]
+  ],
+  getPlacesByDestinationID: (id) => {
+    const trip = get().trip.find((trip: { destinationID: string; }) => trip.destinationID === id);
+    return trip?.places;
+}
 
 }));
