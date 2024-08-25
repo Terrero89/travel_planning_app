@@ -29,8 +29,8 @@ export type Expenses = {
     duration: number;
     comments: string;
     isCompleted: Boolean
-    placerRating: number;
-//     daysRemainingForExpense: number;
+    placerating?: number;
+    daysRemainingForExpense: number;
 }
 
 export type Places = {
