@@ -31,8 +31,9 @@ const CityItem: React.FC<CityProps> = ({ cityList }) => {
                         </div>
 
                         <div className='mx-2 px-1 '>
-                            <p className='text-xs text-gray-300'><span className='text-xs text-white'>End Time: </span> {city.isThisCityVisited ? "Yes" : "Not visited yet"}</p>
-                            <p className='text-xs text-gray-300'><span className='text-xs text-white'>Star Time:</span> {city.totalCost}</p>
+                            <p className='text-xs text-gray-300'><span className='text-xs text-white'>Visited: </span> {city.isThisCityVisited ? "Yes" : "Not visited yet"}</p>
+                            <p className='text-xs text-gray-300'><span className='text-xs text-white'>Ttotal Cost</span> {city.totalCost}</p>
+                            <p className='text-xs text-gray-300'><span className='text-xs text-white'>days remaining:</span> {city.daysRemainingForCity} days</p>
 
 
                         </div>

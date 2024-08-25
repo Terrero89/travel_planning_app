@@ -3,6 +3,7 @@
 
 // import { useTripsStore } from '@/app/stores/useStore';
 import Trips from '../../types/trips';
+import { calculateDaysRemaining } from '../../../../utils/date-convertion';
 
 
 interface DestionationProps {
@@ -34,10 +35,14 @@ const DestinationItem: React.FC<DestionationProps> = ({ destinationList }) => {
                         <div className='mx-2 px-1 '>
                             <p className='text-xs text-gray-300'><span className='text-xs text-white'>Transportation: </span>{trip.transportType}</p>
                             <p className='text-xs text-gray-300'><span className='text-xs text-white'>Trip Status: </span>{trip.isTripCompleted ? "Visited" : "Not visited yet"}</p>
+                            <p className='text-xs text-gray-300'><span className='text-xs text-white'>days Remaining </span>{trip.daysRemainingForTrip}</p>
+
                         </div>
 
                         <div className=' text-xs'>
                             <p className='text-xs text-gray-300'> <span className='text-xs text-white'>Rating </span> {trip.tripRating} </p>
+                            <p className='text-xs text-gray-300'> <span className='text-xs text-white'>Cities </span> {trip.citiesIncludedOnTrip} </p>
+
                             <button className='my-1'>See Cities</button></div>
                     </div>
                 </li>))}

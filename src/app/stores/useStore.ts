@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import Trips from '../../../types/trips';
+import { calculateDaysRemaining, calculateDaysSpent } from '../../../utils/date-convertion';
 
 interface TripsState {
   trip: Trips[];
@@ -12,11 +13,17 @@ export const useTripsStore = create<TripsState>((set) => ({
       transportType: "Flight",
       from: new Date(2024, 10, 7).toDateString(),
       to: new Date(2024, 10, 19).toDateString(),
-      destinationBudget: 1000, // based on the total cost of the trip
-      tripDuration: 12,
+      destinationBudget: 1000,
+      get tripDuration() {
+        return calculateDaysSpent(this.from, this.to);
+      },
+      get daysRemainingForTrip() {
+        return calculateDaysRemaining(this.from) === calculateDaysRemaining(this.from) ? calculateDaysRemaining(this.from) : 0; //! crete util to make day/dayss based on how many days are left
+      },
       dateAdded: new Date(2024, 7, 7).toDateString(),
       isTripCompleted: false,
       tripRating: 4.5,
+      citiesIncludedOnTrip: 9,
       places: [
         {
           cityID: "city1",
@@ -26,7 +33,13 @@ export const useTripsStore = create<TripsState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           cityRating: 4.5,
-          duration: 3,
+          get duration() {
+            return calculateDaysSpent(this.from, this.to);
+          },
+          get daysRemainingForCity() {
+            return calculateDaysRemaining(this.from) === calculateDaysRemaining(this.from) ? calculateDaysRemaining(this.from) : 0; //! crete util to make day/dayss based on how many days are left
+          },
+          expenseIncludedOnCity: 15,
           expenses: [
             {
               expenseID: "ex1",
@@ -138,7 +151,14 @@ export const useTripsStore = create<TripsState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           cityRating: 4.5,
-          duration: 3,
+
+          get duration() {
+            return calculateDaysSpent(this.from, this.to);
+          },
+          get daysRemainingForCity() {
+            return calculateDaysRemaining(this.from) === calculateDaysRemaining(this.from) ? calculateDaysRemaining(this.from) : 0; //! crete util to make day/dayss based on how many days are left
+          },
+          expenseIncludedOnCity: 8,
           expenses: [
             {
               expenseID: "ex1",
@@ -246,9 +266,18 @@ export const useTripsStore = create<TripsState>((set) => ({
           from: new Date(2024, 10, 9).toDateString(),
           to: new Date(2024, 10, 12).toDateString(),
           totalCost: 0, // based on the total cost of the trip
+
           isThisCityVisited: false,
           cityRating: 4.5,
-          duration: 2,
+
+          get duration() {
+            return calculateDaysSpent(this.from, this.to);
+          },
+          get daysRemainingForCity() {
+            return calculateDaysRemaining(this.from) === calculateDaysRemaining(this.from) ? calculateDaysRemaining(this.from) : 0; //! crete util to make day/dayss based on how many days are left
+          },
+
+          expenseIncludedOnCity: 6,
           expenses: [
             {
               expenseID: "ex1",
@@ -359,7 +388,15 @@ export const useTripsStore = create<TripsState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           cityRating: 4.5,
-          duration: 1,
+
+
+          get duration() {
+            return calculateDaysSpent(this.from, this.to);
+          },
+          get daysRemainingForCity() {
+            return calculateDaysRemaining(this.from) === calculateDaysRemaining(this.from) ? calculateDaysRemaining(this.from) : 0; //! crete util to make day/dayss based on how many days are left
+          },
+          expenseIncludedOnCity: 5,
           expenses: [
             {
               expenseID: "ex1",
@@ -471,7 +508,14 @@ export const useTripsStore = create<TripsState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           cityRating: 4.5,
-          duration: 0.5,
+
+          get duration() {
+            return calculateDaysSpent(this.from, this.to);
+          },
+          get daysRemainingForCity() {
+            return calculateDaysRemaining(this.from) === calculateDaysRemaining(this.from) ? calculateDaysRemaining(this.from) : 0; //! crete util to make day/dayss based on how many days are left
+          },
+          expenseIncludedOnCity: 9,
           expenses: [
             {
               expenseID: "ex1",
@@ -582,7 +626,14 @@ export const useTripsStore = create<TripsState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           cityRating: 4.5,
-          duration: 0.5,
+
+          get duration() {
+            return calculateDaysSpent(this.from, this.to);
+          },
+          get daysRemainingForCity() {
+            return calculateDaysRemaining(this.from) === calculateDaysRemaining(this.from) ? calculateDaysRemaining(this.from) : 0; //! crete util to make day/dayss based on how many days are left
+          },
+          expenseIncludedOnCity: 7,
           expenses: [
             {
               expenseID: "ex1",
@@ -693,8 +744,14 @@ export const useTripsStore = create<TripsState>((set) => ({
           to: new Date(2024, 10, 12).toDateString(),
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
-          cityRating: 4.5,
-          duration: 0.5,
+
+          get duration() {
+            return calculateDaysSpent(this.from, this.to);
+          },
+          get daysRemainingForCity() {
+            return calculateDaysRemaining(this.from) === calculateDaysRemaining(this.from) ? calculateDaysRemaining(this.from) : 0; //! crete util to make day/dayss based on how many days are left
+          },
+          expenseIncludedOnCity: 9,
           expenses: [
             {
               expenseID: "ex1",
@@ -805,7 +862,14 @@ export const useTripsStore = create<TripsState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           cityRating: 4.5,
-          duration: 1,
+
+          get duration() {
+            return calculateDaysSpent(this.from, this.to);
+          },
+          get daysRemainingForCity() {
+            return calculateDaysRemaining(this.from) === calculateDaysRemaining(this.from) ? calculateDaysRemaining(this.from) : 0; //! crete util to make day/dayss based on how many days are left
+          },
+          expenseIncludedOnCity: 15,
           expenses: [
             {
               expenseID: "ex1",
@@ -919,7 +983,14 @@ export const useTripsStore = create<TripsState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           cityRating: 4.5,
-          duration: 1,
+
+          get duration() {
+            return calculateDaysSpent(this.from, this.to);
+          },
+          get daysRemainingForCity() {
+            return calculateDaysRemaining(this.from) === calculateDaysRemaining(this.from) ? calculateDaysRemaining(this.from) : 0; //! crete util to make day/dayss based on how many days are left
+          },
+          expenseIncludedOnCity: 12,
           expenses: [
             {
               expenseID: "ex1",
@@ -1030,15 +1101,19 @@ export const useTripsStore = create<TripsState>((set) => ({
       destinationID: "trip2",
       destination: "Canada",
       transportType: "Flight",
-      from: new Date(2024, 10, 9).toDateString(),
-      to: new Date(2024, 10, 12).toDateString(),
+      from: new Date(2024, 11, 20).toDateString(),
+      to: new Date(2024, 11, 28).toDateString(),
       destinationBudget: 1000, // based on the total cost of the trip
-      arriving: "11-08-2024",
-      leaving: "11-19-2024",
-      tripDuration: 12,
+      get tripDuration() {
+        return calculateDaysSpent(this.from, this.to);
+      },
+      get daysRemainingForTrip() {
+        return calculateDaysRemaining(this.from) === calculateDaysRemaining(this.from) ? 'visited' : 0; //! crete util to make day/dayss based on how many days are left
+      },
       dateAdded: "08-07-2024",
       isTripCompleted: false,
       tripRating: 4.7,
+      citiesIncludedOnTrip: 2,
       places: [
         {
           cityID: "city1",
@@ -1048,6 +1123,14 @@ export const useTripsStore = create<TripsState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           cityRating: 4.5,
+
+          get duration() {
+            return calculateDaysSpent(this.from, this.to);
+          },
+          get daysRemainingForCity() {
+            return calculateDaysRemaining(this.from) === calculateDaysRemaining(this.from) ? calculateDaysRemaining(this.from) : 0; //! crete util to make day/dayss based on how many days are left
+          },
+          expenseIncludedOnCity: 1,
           expenses: [
             { expenseID: "ex4", category: "Transportation", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", startTime: '03:56pm', endTime: '06:04pm', duration: 2.1, comments: "", location: '', isCompleted: false, placerating: 4.4 }
 
@@ -1062,6 +1145,14 @@ export const useTripsStore = create<TripsState>((set) => ({
           totalCost: 0, // based on the total cost of the trip
           isThisCityVisited: false,
           cityRating: 4.5,
+
+          get duration() {
+            return calculateDaysSpent(this.from, this.to);
+          },
+          get daysRemainingForCity() {
+            return calculateDaysRemaining(this.from) === calculateDaysRemaining(this.from) ? calculateDaysRemaining(this.from) : 0; //! crete util to make day/dayss based on how many days are left
+          },
+          expenseIncludedOnCity: 3,
           expenses: [
             { expenseID: "ex4", category: "Transportation", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", startTime: '03:56pm', endTime: '06:04pm', duration: 2.1, comments: "", location: '', isCompleted: false, placerating: 4.4 }
 

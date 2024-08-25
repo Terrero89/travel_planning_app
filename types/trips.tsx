@@ -7,11 +7,12 @@ export type Trips =  {
     from: Date | string;
     to: Date | string;
     destinationBudget:number; // based on the total cost of the trip
-    tripDuration: 12,
+    tripDuration: number;
     dateAdded: Date | string;
     isTripCompleted: boolean;
     tripRating: number;
-    // daysRemaining: string
+    daysRemainingForTrip: number;
+    citiesIncludedOnTrip: number;
     places: Places[];
 }
 export type Expenses = {
@@ -29,7 +30,7 @@ export type Expenses = {
     comments: string;
     isCompleted: Boolean
     placerRating: number;
-    // daysRemaining: string
+//     daysRemainingForExpense: number;
 }
 
 export type Places = {
@@ -42,7 +43,8 @@ export type Places = {
     isThisCityVisited: boolean;
     cityRating: number;
     duration: number;
-    // daysRemaining: string // if it is due, convert it to positive and add 13 days ago.. etc..
+    daysRemainingForCity: number;// if it is due, convert it to positive and add 13 days ago.. etc..
+    expenseIncludedOnCity: number;
     expenses: Expenses[];
     
 }
