@@ -53,7 +53,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Historic fortress with stunning views of the city",
               location: 'Málaga, Spain',
               isCompleted: false,
-              placeRating: 4.7
+              placeRating: 4.7,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex2",
@@ -67,7 +68,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Famous for its fresh seafood and unique auction-style dining",
               location: 'El Tintero, Málaga, Spain',
               isCompleted: false,
-              placerating: 4.6
+              placerating: 4.6,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex3",
@@ -81,7 +83,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Renowned as 'La Manquita', a beautiful Renaissance-style cathedral",
               location: 'Málaga, Spain',
               isCompleted: false,
-              placerating: 4.8
+              placerating: 4.8,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex4",
@@ -95,7 +98,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Quick ride to the castle",
               location: 'Málaga, Spain',
               isCompleted: false,
-              placerating: 4.5
+              placerating: 4.5,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex5",
@@ -109,7 +113,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Historic castle with panoramic views of Málaga",
               location: 'Málaga, Spain',
               isCompleted: false,
-              placerating: 4.7
+              placerating: 4.7,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex6",
@@ -123,7 +128,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Stylish hotel in the city center with a rooftop pool",
               location: 'Málaga, Spain',
               isCompleted: false,
-              placerating: 4.8
+              placerating: 4.8,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex7",
@@ -138,7 +144,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Art books and prints from the museum store",
               location: 'Málaga, Spain',
               isCompleted: false,
-              placerating: 4.6
+              placerating: 4.6,
+              daysRemainingForExpense: 0,
             }
           ]
 
@@ -172,7 +179,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Stunning Gothic architecture and the Giralda Tower view",
               location: 'Seville, Spain',
               isCompleted: false,
-              placerating: 4.8
+              placerating: 4.8,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex2",
@@ -186,7 +194,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Traditional Andalusian tapas experience",
               location: 'El Rinconcillo, Seville, Spain',
               isCompleted: false,
-              placerating: 4.7
+              placerating: 4.7,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex3",
@@ -200,7 +209,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Royal Palace with beautiful gardens",
               location: 'Seville, Spain',
               isCompleted: false,
-              placerating: 4.9
+              placerating: 4.9,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex4",
@@ -213,7 +223,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Quick and convenient",
               location: 'Seville, Spain',
               isCompleted: false,
-              placerating: 4.5
+              placerating: 4.5,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex5",
@@ -227,7 +238,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Iconic square with beautiful architecture and canal",
               location: 'Seville, Spain',
               isCompleted: false,
-              placerating: 4.9
+              placerating: 4.9,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex6",
@@ -241,7 +253,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Luxurious stay in a historic hotel",
               location: 'Seville, Spain',
               isCompleted: false,
-              placerating: 4.8
+              placerating: 4.8,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex7",
@@ -255,7 +268,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Handcrafted items from a local shop",
               location: 'Seville, Spain',
               isCompleted: false,
-              placerating: 4.6
+              placerating: 4.6,
+              daysRemainingForExpense: 0,
             }
           ]
 
@@ -291,7 +305,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Visit the stunning Moorish palace and fortress with beautiful gardens and intricate architecture",
               location: 'Granada, Spain',
               isCompleted: false,
-              placerating: 4.9
+              placerating: 4.9,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex2",
@@ -305,7 +320,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Enjoy traditional Spanish tapas at a popular local eatery",
               location: 'Granada, Spain',
               isCompleted: false,
-              placerating: 4.7
+              placerating: 4.7,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex3",
@@ -319,7 +335,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Explore the impressive Renaissance cathedral and its beautiful interior",
               location: 'Granada, Spain',
               isCompleted: false,
-              placerating: 4.8
+              placerating: 4.8,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex4",
@@ -333,7 +350,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Short taxi ride to the historic Albaicín district known for its narrow streets and views",
               location: 'Granada, Spain',
               isCompleted: false,
-              placerating: 4.6
+              placerating: 4.6,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex5",
@@ -347,7 +365,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Wander through the charming old Moorish quarter with its traditional houses and streets",
               location: 'Granada, Spain',
               isCompleted: false,
-              placerating: 4.8
+              placerating: 4.8,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex6",
@@ -361,7 +380,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Stay at a comfortable hotel located near the city center",
               location: 'Granada, Spain',
               isCompleted: false,
-              placerating: 4.7
+              placerating: 4.7,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex7",
@@ -375,7 +395,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Buy a souvenir related to the Alhambra to remember your visit",
               location: 'Granada, Spain',
               isCompleted: false,
-              placerating: 4.6
+              placerating: 4.6,
+              daysRemainingForExpense: 0,
             }
           ]
 
@@ -410,7 +431,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Iconic mosque-cathedral, a blend of Islamic and Christian architecture",
               location: 'Córdoba, Spain',
               isCompleted: false,
-              placerating: 4.9
+              placerating: 4.9,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex2",
@@ -424,7 +446,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Traditional cold soup, a must-try dish in Córdoba",
               location: 'Bodegas Mezquita, Córdoba, Spain',
               isCompleted: false,
-              placerating: 4.7
+              placerating: 4.7,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex3",
@@ -438,7 +461,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Historic fortress with beautiful gardens and views of the city",
               location: 'Córdoba, Spain',
               isCompleted: false,
-              placerating: 4.8
+              placerating: 4.8,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex4",
@@ -452,7 +476,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Ride to the ruins of the medieval palace-city",
               location: 'Córdoba, Spain',
               isCompleted: false,
-              placerating: 4.5
+              placerating: 4.5,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex5",
@@ -466,7 +491,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Explore the archaeological site of the ancient palace-city",
               location: 'Córdoba, Spain',
               isCompleted: false,
-              placerating: 4.6
+              placerating: 4.6,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex6",
@@ -480,7 +506,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Luxurious hotel set in a 16th-century palace",
               location: 'Córdoba, Spain',
               isCompleted: false,
-              placerating: 4.9
+              placerating: 4.9,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex7",
@@ -494,7 +521,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Artisan leather items from a local workshop",
               location: 'Córdoba, Spain',
               isCompleted: false,
-              placerating: 4.7
+              placerating: 4.7,
+              daysRemainingForExpense: 0,
             }
 
           ]
@@ -529,7 +557,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Walk through the unique cave houses built into the cliffs",
               location: 'Setenil de las Bodegas, Spain',
               isCompleted: false,
-              placerating: 4.8
+              placerating: 4.8,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex2",
@@ -543,7 +572,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Enjoy traditional Andalusian dishes in a local restaurant",
               location: 'Setenil de las Bodegas, Spain',
               isCompleted: false,
-              placerating: 4.6
+              placerating: 4.6,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex3",
@@ -557,7 +587,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Explore the historic church with its interesting architecture",
               location: 'Setenil de las Bodegas, Spain',
               isCompleted: false,
-              placerating: 4.5
+              placerating: 4.5,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex4",
@@ -571,7 +602,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Taxi ride to reach Setenil de las Bodegas from Ronda",
               location: 'Setenil de las Bodegas, Spain',
               isCompleted: false,
-              placerating: 4.4
+              placerating: 4.4,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex5",
@@ -585,7 +617,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Guided walking tour to explore the town’s unique features",
               location: 'Setenil de las Bodegas, Spain',
               isCompleted: false,
-              placerating: 4.7
+              placerating: 4.7,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex6",
@@ -599,7 +632,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Stay at a rural hotel with a cozy atmosphere near Setenil",
               location: 'Setenil de las Bodegas, Spain',
               isCompleted: false,
-              placerating: 4.6
+              placerating: 4.6,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex7",
@@ -613,7 +647,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Buy handmade crafts and souvenirs from local artisans",
               location: 'Setenil de las Bodegas, Spain',
               isCompleted: false,
-              placerating: 4.5
+              placerating: 4.5,
+              daysRemainingForExpense: 0,
             }
           ]
 
@@ -647,7 +682,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Walk through the unique cave houses built into the cliffs",
               location: 'Setenil de las Bodegas, Spain',
               isCompleted: false,
-              placerating: 4.8
+              placerating: 4.8,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex2",
@@ -661,7 +697,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Enjoy traditional Andalusian dishes in a local restaurant",
               location: 'Setenil de las Bodegas, Spain',
               isCompleted: false,
-              placerating: 4.6
+              placerating: 4.6,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex3",
@@ -675,7 +712,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Explore the historic church with its interesting architecture",
               location: 'Setenil de las Bodegas, Spain',
               isCompleted: false,
-              placerating: 4.5
+              placerating: 4.5,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex4",
@@ -689,7 +727,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Taxi ride to reach Setenil de las Bodegas from Ronda",
               location: 'Setenil de las Bodegas, Spain',
               isCompleted: false,
-              placerating: 4.4
+              placerating: 4.4,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex5",
@@ -703,7 +742,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Guided walking tour to explore the town’s unique features",
               location: 'Setenil de las Bodegas, Spain',
               isCompleted: false,
-              placerating: 4.7
+              placerating: 4.7,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex6",
@@ -717,7 +757,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Stay at a rural hotel with a cozy atmosphere near Setenil",
               location: 'Setenil de las Bodegas, Spain',
               isCompleted: false,
-              placerating: 4.6
+              placerating: 4.6,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex7",
@@ -731,7 +772,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Buy handmade crafts and souvenirs from local artisans",
               location: 'Setenil de las Bodegas, Spain',
               isCompleted: false,
-              placerating: 4.5
+              placerating: 4.5,
+              daysRemainingForExpense: 0,
             }
           ]
 
@@ -765,7 +807,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Explore the famous limestone caves with impressive stalactites and stalagmites",
               location: 'Nerja, Spain',
               isCompleted: false,
-              placerating: 4.8
+              placerating: 4.8,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex2",
@@ -779,7 +822,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Enjoy authentic paella at a beachfront restaurant",
               location: 'Nerja, Spain',
               isCompleted: false,
-              placerating: 4.7
+              placerating: 4.7,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex3",
@@ -793,7 +837,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Stroll along the iconic viewpoint offering stunning views of the Mediterranean",
               location: 'Nerja, Spain',
               isCompleted: false,
-              placerating: 4.9
+              placerating: 4.9,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex4",
@@ -807,7 +852,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Short bus ride from Nerja to the charming village of Frigiliana",
               location: 'Nerja to Frigiliana, Spain',
               isCompleted: false,
-              placerating: 4.5
+              placerating: 4.5,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex5",
@@ -821,7 +867,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Explore the whitewashed streets and scenic views of Frigiliana",
               location: 'Frigiliana, Spain',
               isCompleted: false,
-              placerating: 4.8
+              placerating: 4.8,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex6",
@@ -835,7 +882,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Buy some local honey, a specialty of the region",
               location: 'Frigiliana, Spain',
               isCompleted: false,
-              placerating: 4.6
+              placerating: 4.6,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex7",
@@ -849,7 +897,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Stay at a hotel with stunning sea views in Nerja",
               location: 'Nerja, Spain',
               isCompleted: false,
-              placerating: 4.7
+              placerating: 4.7,
+              daysRemainingForExpense: 0,
             }
           ]
 
@@ -883,7 +932,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Walk through the unique cave houses built into the cliffs",
               location: 'Setenil de las Bodegas, Spain',
               isCompleted: false,
-              placerating: 4.8
+              placerating: 4.8,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex2",
@@ -897,7 +947,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Enjoy traditional Andalusian dishes in a local restaurant",
               location: 'Setenil de las Bodegas, Spain',
               isCompleted: false,
-              placerating: 4.6
+              placerating: 4.6,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex3",
@@ -911,7 +962,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Explore the historic church with its interesting architecture",
               location: 'Setenil de las Bodegas, Spain',
               isCompleted: false,
-              placerating: 4.5
+              placerating: 4.5,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex4",
@@ -925,7 +977,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Taxi ride to reach Setenil de las Bodegas from Ronda",
               location: 'Setenil de las Bodegas, Spain',
               isCompleted: false,
-              placerating: 4.4
+              placerating: 4.4,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex5",
@@ -939,7 +992,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Guided walking tour to explore the town’s unique features",
               location: 'Setenil de las Bodegas, Spain',
               isCompleted: false,
-              placerating: 4.7
+              placerating: 4.7,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex6",
@@ -954,7 +1008,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Stay at a rural hotel with a cozy atmosphere near Setenil",
               location: 'Setenil de las Bodegas, Spain',
               isCompleted: false,
-              placerating: 4.6
+              placerating: 4.6,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex7",
@@ -968,7 +1023,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Buy handmade crafts and souvenirs from local artisans",
               location: 'Setenil de las Bodegas, Spain',
               isCompleted: false,
-              placerating: 4.5
+              placerating: 4.5,
+              daysRemainingForExpense: 0,
             },
 
           ]
@@ -1004,7 +1060,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Explore the UNESCO World Heritage Site with its medieval architecture and historical landmarks",
               location: 'Toledo, Spain',
               isCompleted: false,
-              placerating: 4.8
+              placerating: 4.8,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex2",
@@ -1018,7 +1075,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Enjoy traditional Spanish cuisine with a focus on local specialties",
               location: 'Toledo, Spain',
               isCompleted: false,
-              placerating: 4.6
+              placerating: 4.6,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex3",
@@ -1032,7 +1090,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Visit the grand Gothic cathedral known for its stunning architecture and artwork",
               location: 'Toledo, Spain',
               isCompleted: false,
-              placerating: 4.9
+              placerating: 4.9,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex4",
@@ -1046,7 +1105,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Short taxi ride to the impressive Alcázar fortress",
               location: 'Toledo, Spain',
               isCompleted: false,
-              placerating: 4.5
+              placerating: 4.5,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex5",
@@ -1060,7 +1120,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Explore the Alcázar with its military history and panoramic views of Toledo",
               location: 'Toledo, Spain',
               isCompleted: false,
-              placerating: 4.7
+              placerating: 4.7,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex6",
@@ -1074,7 +1135,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Stay at a comfortable hotel located centrally in Toledo",
               location: 'Toledo, Spain',
               isCompleted: false,
-              placerating: 4.6
+              placerating: 4.6,
+              daysRemainingForExpense: 0,
             },
             {
               expenseID: "ex7",
@@ -1088,7 +1150,8 @@ export const useTripsStore = create<TripsState>((set) => ({
               comments: "Buy a traditional Toledo sword as a memorable souvenir",
               location: 'Toledo, Spain',
               isCompleted: false,
-              placerating: 4.8
+              placerating: 4.8,
+              daysRemainingForExpense: 0,
             }
           ]
 
@@ -1132,7 +1195,10 @@ export const useTripsStore = create<TripsState>((set) => ({
           },
           expenseIncludedOnCity: 1,
           expenses: [
-            { expenseID: "ex4", category: "Transportation", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", startTime: '03:56pm', endTime: '06:04pm', duration: 2.1, comments: "", location: '', isCompleted: false, placerating: 4.4 }
+            {
+              expenseID: "ex4", category: "Transportation", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", startTime: '03:56pm', endTime: '06:04pm', duration: 2.1, comments: "", location: '', isCompleted: false, placerating: 4.4,
+              daysRemainingForExpense: 0,
+            }
 
           ]
 
@@ -1154,7 +1220,10 @@ export const useTripsStore = create<TripsState>((set) => ({
           },
           expenseIncludedOnCity: 3,
           expenses: [
-            { expenseID: "ex4", category: "Transportation", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", startTime: '03:56pm', endTime: '06:04pm', duration: 2.1, comments: "", location: '', isCompleted: false, placerating: 4.4 }
+            {
+              expenseID: "ex4", category: "Transportation", expense: "Malaga Cathedral", cost: 20, date: "08-07-2024", startTime: '03:56pm', endTime: '06:04pm', duration: 2.1, comments: "", location: '', isCompleted: false, placerating: 4.4,
+              daysRemainingForExpense: 0,
+            }
 
           ]
 
