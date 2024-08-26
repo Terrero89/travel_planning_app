@@ -21,7 +21,7 @@ const DestinationItem: React.FC<DestionationProps> = ({ destinationList }) => {
                 {destinationList.map((trip) => (
                     <li className=' shadow-sm  cardBg max-w-auto mx-auto  rounded-sm border-opacity-5 m-2 py-2 px-1' key={trip.id} href={''}>
                         <h3 className=' text-base mx-3 my-1 font-semibold'>{trip.destination}</h3>
-                        <Link href="/Destination/cities">
+                        <Link href={`/Destinations/${trip.destinationID}`}>
                             <div className='flex flex-row '>
                                 <div className=' mx-2 px-1  auto-w h-auto '>
                                     <p className='font-medium text-xs text-gray-300'><span className='text-xs text-white'>From: </span>  {trip.from}</p>

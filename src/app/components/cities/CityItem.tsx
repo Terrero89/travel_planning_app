@@ -1,17 +1,19 @@
 
 "use client"
 
-import { Places, Trips } from '../../../../types/trips';
+import Link from 'next/link';
+import { Expenses, Places, Trips } from '../../../../types/trips';
+import { useParams } from 'next/navigation';
 // import { useTripsStore } from '@/app/stores/useStore';
 
 
 interface CityProps {
-    cityList: Places[]
+    cityList: Places[] | Expenses[]
 }
 
 
 const CityItem: React.FC<CityProps> = ({ cityList }) => {
-
+    const params = useParams();
     return (
 
 
@@ -19,6 +21,7 @@ const CityItem: React.FC<CityProps> = ({ cityList }) => {
             <ul className=' '>
                 {cityList.map((city) => (<li className=' cardBg max-w-auto mx-auto  rounded-sm border-opacity-5 m-2 py-2 px-1' key={city.cityID}>
                     <h3 className='text-base mx-3 my-1 font-semibold'>{city.city}</h3>
+                    <Link href={`/Destinations/${params.destinationId}/cities`}>BUTTON
                     <div className='flex flex-row space-x-12  '>
                         <div className=' mx-2 px-1  auto-w h-auto '>
                             <h4 className='font-medium text-xs text-gray-300'><span className='text-xs text-white'>From:</span>  {city.from}</h4>
@@ -43,7 +46,7 @@ const CityItem: React.FC<CityProps> = ({ cityList }) => {
                             <button className='my-1'>See Details</button></div>
 
                     </div>
-
+                    </Link>
                 </li>))}
             </ul>
         </div>
