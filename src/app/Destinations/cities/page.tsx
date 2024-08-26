@@ -1,16 +1,19 @@
+"use client"
+
 import CityList from '@/app/components/cities/CityList';
-import router from 'next/router';
+import {useParams}from 'next/navigation';
 import React from 'react'
 
 
 const citiesPage = () => {
-  const { id } = router.query;
+  const params = useParams()
+  
   return <div>
-
+<h1>ID: {params.destinationId}</h1>
     <h3>LIST of all cities based on destination</h3>
     <div>
       <CityList />
-      <h1>ID: {id}</h1>
+      <h1>ID: {params.destinationId}</h1>
     </div>
   </div>
 }

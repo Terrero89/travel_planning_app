@@ -1,0 +1,150 @@
+[
+    {
+        "destinationID": "trip1",
+        "destination": "Andalusia Trip",
+        "transportType": "Flight",
+        "from": "2024-11-07",
+        "to": "2024-11-19",
+        "destinationBudget": 1000,
+        "tripDuration": 12,
+        "daysRemainingForTrip": 12,
+        "dateAdded": "2024-08-07",
+        "isTripCompleted": false,
+        "tripRating": 4.5,
+        "citiesIncludedOnTrip": 9,
+        "places": [
+            {
+                "cityID": "city1",
+                "city": "Malaga",
+                "from": "2024-11-09",
+                "to": "2024-11-12",
+                "totalCost": 0,
+                "isThisCityVisited": false,
+                "cityRating": 4.5,
+                "duration": 3,
+                "daysRemainingForCity": 3,
+                "expenseIncludedOnCity": 15,
+                "expenses": [
+                    {
+                        "expenseID": "ex1",
+                        "category": "Attractions",
+                        "expense": "Alcazaba of Málaga",
+                        "cost": 10,
+                        "date": "2024-11-12",
+                        "startTime": "09:00am",
+                        "endTime": "11:00am",
+                        "duration": 2.0,
+                        "comments": "Historic fortress with stunning views of the city",
+                        "location": "Málaga, Spain",
+                        "isCompleted": false,
+                        "placeRating": 4.7,
+                        "daysRemainingForExpense": 0
+                    },
+                    {
+                        "expenseID": "ex2",
+                        "category": "Food",
+                        "expense": "Seafood at El Tintero",
+                        "cost": 40,
+                        "date": "2024-11-12",
+                        "startTime": "12:00pm",
+                        "endTime": "01:30pm",
+                        "duration": 1.5,
+                        "comments": "Famous for its fresh seafood and unique auction-style dining",
+                        "location": "El Tintero, Málaga, Spain",
+                        "isCompleted": false,
+                        "placeRating": 4.6,
+                        "daysRemainingForExpense": 0
+                    }
+                ]
+            },
+            {
+                "cityID": "city2",
+                "city": "Seville",
+                "from": "2024-11-13",
+                "to": "2024-11-15",
+                "totalCost": 0,
+                "isThisCityVisited": false,
+                "cityRating": 4.5,
+                "duration": 2,
+                "daysRemainingForCity": 2,
+                "expenseIncludedOnCity": 8,
+                "expenses": [
+                    {
+                        "expenseID": "ex1",
+                        "category": "Attractions",
+                        "expense": "Seville Cathedral",
+                        "cost": 15,
+                        "date": "2024-11-14",
+                        "startTime": "10:00am",
+                        "endTime": "12:00pm",
+                        "duration": 2.0,
+                        "comments": "Stunning Gothic architecture and the Giralda Tower view",
+                        "location": "Seville, Spain",
+                        "isCompleted": false,
+                        "placeRating": 4.8,
+                        "daysRemainingForExpense": 0
+                    },
+                    {
+                        "expenseID": "ex2",
+                        "category": "Food",
+                        "expense": "Tapas at El Rinconcillo",
+                        "cost": 30,
+                        "date": "2024-11-14",
+                        "startTime": "01:00pm",
+                        "endTime": "02:00pm",
+                        "duration": 1.0,
+                        "comments": "Traditional Andalusian tapas experience",
+                        "location": "El Rinconcillo, Seville, Spain",
+                        "isCompleted": false,
+                        "placeRating": 4.7,
+                        "daysRemainingForExpense": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "destinationID": "trip2",
+        "destination": "Canada",
+        "transportType": "Flight",
+        "from": "2024-12-20",
+        "to": "2024-12-28",
+        "destinationBudget": 1000,
+        "tripDuration": 8,
+        "daysRemainingForTrip": 8,
+        "dateAdded": "2024-08-08",
+        "isTripCompleted": false,
+        "tripRating": 4.7,
+        "citiesIncludedOnTrip": 2,
+        "places": [
+            {
+                "cityID": "city1",
+                "city": "Montreal",
+                "from": "2024-12-20",
+                "to": "2024-12-23",
+                "totalCost": 0,
+                "isThisCityVisited": false,
+                "cityRating": 4.5,
+                "duration": 3,
+                "daysRemainingForCity": 3,
+                "expenseIncludedOnCity": 1,
+                "expenses": [
+                    {}]
+            },
+            {
+                "cityID": "city2",
+                "city": "Vancouver",
+                "from": "2024-12-20",
+                "to": "2024-12-23",
+                "totalCost": 0,
+                "isThisCityVisited": false,
+                "cityRating": 4.5,
+                "duration": 3,
+                "daysRemainingForCity": 3,
+                "expenseIncludedOnCity": 1,
+                "expenses": [
+                    {}]
+            }
+        ]
+    }
+]
